@@ -32,7 +32,8 @@ Encore
     // but, you probably want this, unless you're building a single-page app
     .enableSingleRuntimeChunk()
 
-    .enableVersioning()
+    // .enableVersioning()
+    .enableVueLoader()
 
     /*
      * FEATURE CONFIG
