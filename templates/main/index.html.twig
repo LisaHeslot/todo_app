@@ -3,5 +3,10 @@
 {% block title %}Todo app{% endblock %}
 
 {% block body %}
-        <div id="app" user-data="{{ app.user }}"></div>
+        {% if app.user != null %}
+                <div id="app" user-data="{{ app.user.serialize() }}"></div>
+        {% endif %}
+        {% if app.user == null %}
+                <div id="app"></div>
+        {% endif %}
 {% endblock %}

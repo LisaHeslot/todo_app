@@ -8,7 +8,7 @@ new Vue({
     render(h) {
         return h(App, {
             props: {
-                user: this.$el.getAttribute('user-data'),
+                userData: JSON.parse(this.$el.getAttribute('user-data')),
             },
         })
     },

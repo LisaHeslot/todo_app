@@ -1,10 +1,9 @@
 <template>
-  <h1>Hello world!</h1>
+  <h1>Hello world! {{ userData }}</h1>
 </template>
 
 <script>
 export default {
-  components: {
-  },
+    props: ['userData']
 }
 </script>
